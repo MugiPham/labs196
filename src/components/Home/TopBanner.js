@@ -1,7 +1,7 @@
 import styles from "../../../styles/HomePage.module.scss";
 import button from "../../../styles/Buttons.module.scss";
 import Link from "next/link";
-import background from "../../../public/images/MainBanner2x.png";
+import background from "../../../public/images/MainBanner.png";
 import Image from "next/image";
 import { Row, Col, Container } from "react-bootstrap";
 
