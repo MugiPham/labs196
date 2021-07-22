@@ -3,7 +3,7 @@ import styles from '../../../styles/Programs.module.scss'
 import midImage from '../../../public/images/LabsFloor6.png'
 import { Row, Col } from 'react-bootstrap';
 
-export default function AcceleratorProgram() {
+export default function accelerator() {
     return (
         <section className={styles.acceleratorInfo}>
             <h4 className={styles.sectionTitle}>Accelerator Program</h4>

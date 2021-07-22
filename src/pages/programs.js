@@ -2,10 +2,10 @@ import Image from 'next/image'
 import styles from '../../styles/Programs.module.scss'
 import background from "../../public/images/MainBanner2x.png"
 import { Container, Row, Col } from 'react-bootstrap';
-import AcceleratorProgram from '../components/Programs/Accelerator';
-import InternshipProgram from '../components/Programs/Internship'
+import AcceleratorProgram from '../components/Programs/accelerator';
+import InternshipProgram from '../components/Programs/internship'
 
-export default function Programs() {
+export default function programs() {
     return (
         <Container className={styles.programsContainer}>
             <Row className={styles.bannerContainer}>
