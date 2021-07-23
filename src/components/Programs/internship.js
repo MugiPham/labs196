@@ -1,7 +1,7 @@
 import styles from '../../../styles/Programs.module.scss'
 import { Row, Col } from 'react-bootstrap';
 
-export default function internship() {
+export default function InternshipProgram() {
     return (
         <section className={styles.internshipInfo}>
             <h4 className={styles.sectionTitle}>Internship Program</h4>

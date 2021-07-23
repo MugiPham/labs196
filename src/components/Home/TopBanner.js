@@ -1,8 +1,7 @@
 import styles from "../../../styles/HomePage.module.scss";
 import button from "../../../styles/Buttons.module.scss";
 import Link from "next/link";
-import background from "../../../public/images/MainBanner.png";
-import Image from "next/image";
+import Image from "react-bootstrap/Image"
 import { Row, Col, Container } from "react-bootstrap";
 
 export default function TopBanner() {
@@ -21,14 +20,15 @@ export default function TopBanner() {
               Texas, USA to transform and develop your company.
             </p>
           </Col>
-          <Col className={styles.topImg}>
+          <Col>
+          <div>
             <Image
-              src={background}
-              height={1600}
-              objectFit="cover"
-              objectPosition="center center"
+              src="/images/MainBanner2x.png"
+              width="100%"
               alt="background"
+              className={styles.topImg}
             />
+            </div>
           </Col>
         </Row>
       </Container>

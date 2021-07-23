@@ -152,10 +152,9 @@ $banner-bg: url("../public/images/MainBanner.png");
   }
 
   .aboutMentors {
-    //first row of mentor profiles
     h3 {
       text-align: center;
-      font-size: 1em;
+      font-size: 1.2em;
       font-family: "Lato Regular";
       text-transform: uppercase;
       font-weight: bold;
@@ -184,16 +183,6 @@ $banner-bg: url("../public/images/MainBanner.png");
       font-style: italic;
     }
 
-    h3 {
-      text-align: center;
-      font-size: 1.1em;
-    }
-
-    h4 {
-      text-align: center;
-      font-size: 0.7em;
-    }
-
     p {
       padding: 0.4em 3.2em 1em 0.5 em;
       font-size: 1em;
@@ -201,8 +190,8 @@ $banner-bg: url("../public/images/MainBanner.png");
     }
   }
 
-  .mentorShowcase {
-    padding-top: 1em;
+  // .mentorShowcase {
+  //   padding-top: 1em;
 
     h3 {
       text-align: center;
@@ -218,11 +207,10 @@ $banner-bg: url("../public/images/MainBanner.png");
       font-size: .8em;
       text-transform: uppercase;
     }
-  }
+  // }
 
   .team {
-    border: 1px solid #000 !important;
-    border-radius: 50%;
+    border: 1px solid #000;
   }
 
   .doubleSubheader {

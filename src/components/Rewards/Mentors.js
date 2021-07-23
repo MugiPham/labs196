@@ -1,22 +1,7 @@
 import styles from "../../../styles/Rewards.module.scss";
 import btnStyles from "../../../styles/Buttons.module.scss";
 import { Row, Col, Container } from "react-bootstrap";
-import blueOffice from "../../../public/images/MainBanner.png";
-import midSectionImg from "../../../public/images/LabsFloor8.png";
-import team1 from "../../../public/images/team/jay_patel.jpg";
-import team2 from "../../../public/images/team/andy_chopra.png";
-import team3 from "../../../public/images/team/daniel_sloan.jpg";
-import team4 from "../../../public/images/team/deepak_sharma.jpg";
-import team5 from "../../../public/images/team/harish_mamtani.png";
-import team6 from "../../../public/images/team/jerry_francese.jpg";
-import team7 from "../../../public/images/team/mahesh_sashital.png";
-import team8 from "../../../public/images/team/neeraj_satija.png";
-import team9 from "../../../public/images/team/nikolas_joyce.jpg";
-import team10 from "../../../public/images/team/rayaan_arif.jpg";
-import team11 from "../../../public/images/team/heather.png";
-import team12 from "../../../public/images/team/andrew.jpg";
-
-import Image from "next/image";
+import Image from "react-bootstrap/Image"
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -29,7 +14,7 @@ export default function Mentors() {
 
         <Row>
           <Col className={styles.mentorSubBanner} md={6}>
-            <Image src={midSectionImg} alt="blue people" />
+            <Image src="/images/LabsFloor8.png" width="100%" alt="blue people" />
           </Col>
           <Col className={styles.mentorSubHeader}>
             <h1>Learn from the right people when you need them</h1>
@@ -57,17 +42,14 @@ export default function Mentors() {
               resources, compliance, leadership development, and more.
             </p>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team1}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="50% 50%"
-              className={styles.team}
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle
+              src="/images/team/jay_patel.jpg"
+              width="100%"
               alt="Jay Patel"
+              className={styles.team}
             />
-            <h3>
+            <h3  className="pt-3">
               Jay Patel{" "}
               <a
                 href="https://www.linkedin.com/in/jay-patel-a64450146/"
@@ -79,17 +61,14 @@ export default function Mentors() {
             </h3>
             <h4>FOUNDER/CEO</h4>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team2}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="50% 50%"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle rounded
+              src="/images/team/andy_chopra.png"
+              width="100%"
               className={styles.team}
               alt="Andy Chopra"
             />
-            <h3>
+            <h3  className="pt-3">
               Andy Chopra{" "}
               <a
                 href="https://www.linkedin.com/in/andy-chopra-phd-00a1a84/"
@@ -101,17 +80,14 @@ export default function Mentors() {
             </h3>
             <h4>Outreach</h4>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team3}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="50% 50%"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle rounded
+              src="images/team/daniel_sloan.jpg"
+              width="100%"
               className={styles.team}
               alt="Daniel Sloan"
             />
-            <h3>
+            <h3  className="pt-3">
               Daniel Sloan{" "}
               <a
                 href="https://www.linkedin.com/in/sloandaniel/"
@@ -123,87 +99,14 @@ export default function Mentors() {
             </h3>
             <h4>Investment</h4>
           </Col>
-        </Row>
-        {/* <Col> */}
-        <Row className={styles.mentorShowcase}>
-          {" "}
-          {/* <Col xs={4} md={2} className="align-self-center justify-content-center">
-              <Image
-                src={team1}
-                height={250}
-                width={250}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                className={styles.team}
-                alt="Jay Patel"
-              />
-              <h3>
-                Jay Patel{" "}
-                <a
-                  href="https://www.linkedin.com/in/jay-patel-a64450146/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-              </h3>
-              <h4>FOUNDER/CEO </h4>
-            </Col>
-            <Col xs={4} md={2}>
-              <Image
-                src={team2}
-                height={250}
-                width={250}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                className={styles.team}
-                alt="Andy Chopra"
-              />
-              <h3>
-                Andy Chopra{" "}
-                <a
-                  href="https://www.linkedin.com/in/andy-chopra-phd-00a1a84/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-              </h3>
-              <h4>Outreach</h4>
-            </Col>
-            <Col xs={4} md={2}>
-              <Image
-                src={team3}
-                height={250}
-                width={250}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                className={styles.team}
-                alt="Daniel Sloan"
-              />
-              <h3>
-                Daniel Sloan{" "}
-                <a
-                  href="https://www.linkedin.com/in/sloandaniel/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-              </h3>
-              <h4>Investment</h4>
-            </Col> */}
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team4}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="center bottom"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle rounded
+              src="/images/team/deepak_sharma.jpg"
+              width="100%"
               className={styles.team}
               alt="Deepak Sharma"
             />
-            <h3>
+            <h3  className="pt-3">
               Deepak Sharma{" "}
               <a
                 href="https://www.linkedin.com/in/deepak-sharma-4b21a1181/"
@@ -215,17 +118,14 @@ export default function Mentors() {
             </h3>
             <h4>Investment</h4>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team5}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="bottom center"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle rounded
+              src="/images/team/harish_mamtani.png"
+              width="100%"
               className={styles.team}
               alt="Harish Mamtani"
             />
-            <h3>
+            <h3  className="pt-3">
               Harish Mamtani{" "}
               <a
                 href="https://www.linkedin.com/in/harishmamtani/"
@@ -237,17 +137,14 @@ export default function Mentors() {
             </h3>
             <h4>Advisor</h4>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team6}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="center bottom"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle
+              src="/images/team/jerry_francese.jpg"
+              width="100%"
               className={styles.team}
               alt="Jerry Francese"
             />
-            <h3>
+            <h3  className="pt-3">
               Jerry Francese{" "}
               <a
                 href="https://www.linkedin.com/in/gerald-francese-7136555/"
@@ -259,17 +156,14 @@ export default function Mentors() {
             </h3>
             <h4>Advisor</h4>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team7}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="center bottom"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle rounded
+              src="/images/team/mahesh_sashital.png"
+              width="100%"
               className={styles.team}
               alt="Mahesh Sashital"
             />
-            <h3>
+            <h3  className="pt-3">
               Mahesh Sashital{" "}
               <a
                 href="https://www.linkedin.com/in/msashital/"
@@ -281,17 +175,14 @@ export default function Mentors() {
             </h3>
             <h4>Development</h4>
           </Col>
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team8}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="50% 50%"
-              // className={styles.team}
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle
+              src="/images/team/neeraj_satija.png"
+              width="100%"
               alt="Neeraj Satija"
+              // className={styles.team}
             />
-            <h3>
+            <h3 className="pt-3">
               Neeraj Satija{" "}
               <a
                 href="https://www.linkedin.com/in/neerajsatija/"
@@ -303,61 +194,14 @@ export default function Mentors() {
             </h3>
             <h4>Development</h4>
           </Col>
-          {/* <Col xs={4} md={2}>
-              <Image
-                src={team9}
-                height={250}
-                width={250}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                className={styles.team}
-                alt="Nikolas Joyce"
-              />
-              <h3>
-                Nikolas Joyce{" "}
-                <a
-                  href="https://www.linkedin.com/in/nikolas-joyce-a50a3a20/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-              </h3>
-              <h4>Advisor</h4>
-            </Col> */}
-          {/* <Col xs={4} md={2}>
-              <Image
-                src={team10}
-                height={250}
-                width={250}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                className={styles.team}
-                alt="Rayaan Arif"
-              />
-              <h3>
-                Rayaan Arif{" "}
-                <a
-                  href="https://www.linkedin.com/in/konectcity/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin />
-                </a>
-              </h3>
-              <h4>Asset Management</h4>
-            </Col> */}
-          <Col xs={4} md={2} className="align-self-center justify-content-center text-center">
-            <Image
-              src={team11}
-              height={160}
-              width={160}
-              objectFit="scale-down"
-              objectPosition="50% 50%"
+          <Col xs={6} md={3} lg={2} className="align-self-top justify-content-center text-center p-4">
+            <Image roundedCircle
+              src="/images/team/heather.png"
+              width="100%"
               className={styles.team}
               alt="Heather Leighton"
             />
-            <h3>
+            <h3  className="pt-3">
               Heather Leighton{" "}
               <a
                 href="https://www.linkedin.com/in/heather-leighton-a6695aa7/"
@@ -369,30 +213,7 @@ export default function Mentors() {
             </h3>
             <h4>Marketing</h4>
           </Col>
-          {/* <Col xs={4} md={2}>
-              <Image
-                src={team12}
-                height={250}
-                width={250}
-                objectFit="cover"
-                objectPosition="50% 50%"
-                className={styles.team}
-                alt="Andrew Higdon"
-              />
-              <h3>
-                Andrew Higdon{" "}
-                <a
-                  href="https://www.linkedin.com/in/ahigdon/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <FaLinkedin />
-                </a>
-              </h3>
-              <h4>Development</h4>
-            </Col> */}
         </Row>
-        {/* </Col> */}
 
         <Row className={styles.doubleSubheader}>
           <Col xs={12} md={6}>

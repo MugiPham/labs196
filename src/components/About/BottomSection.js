@@ -1,8 +1,6 @@
 import styles from "../../../styles/About.module.scss";
 import Link from "next/link";
-import Image from "next/image";
 import { Row, Col, Container } from "react-bootstrap";
-import { BiRightArrowAlt } from "react-icons/bi";
 
 export default function BottomSection() {
   return (

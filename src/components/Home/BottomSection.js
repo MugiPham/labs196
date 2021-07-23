@@ -1,7 +1,6 @@
 import styles from "../../../styles/HomePage.module.scss";
 import btnStyles from "../../../styles/Buttons.module.scss";
 import Link from "next/link";
-import Image from "next/image";
 import { Row, Col, Container } from "react-bootstrap";
 import { BiRightArrowAlt } from "react-icons/bi";
 

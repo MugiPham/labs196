@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
+import Image from "react-bootstrap/Image"
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import styles from "../../../styles/Nav.module.scss";
 import btnStyles from "../../../styles/Buttons.module.scss";
-import logo from "../../../public/images/labs196_logo_black.svg";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +20,7 @@ export default function Nav() {
             <Link href="/">
               <a className={styles.navlogo}>
                 {" "}
-                <Image src={logo} alt="Labs196 logo" />
+                <Image src="/images/labs196_logo_black.svg" alt="Labs196 logo" />
               </a>
             </Link>
             <Link href="/programs#accelerator-form" scroll={false}>

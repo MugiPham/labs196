@@ -1,8 +1,6 @@
 import styles from "../../../styles/Rewards.module.scss";
 import { Row, Col, Container } from "react-bootstrap";
-import Image from "next/image";
-import hubspot from "../../../public/images/hubspot_logo.png";
-import aws from "../../../public/images/aws_logo.png";
+import Image from "react-bootstrap/Image"
 import background from "../../../public/images/MainBanner2x.png";
 
 export default function MainBanner() {
@@ -15,9 +13,9 @@ export default function MainBanner() {
           </Col>
           <Col>
             <Image
-              src={background}
+              src="images/MainBanner2x.png"
               className={styles.topImg}
-              height={1200}
+              width="100%"
               objectFit="cover"
               objectPosition="center center"
               alt="background"
@@ -47,14 +45,14 @@ export default function MainBanner() {
             <h1>Current Perks</h1>
           </Col>
           <Col md={3} className={styles.perkLogos}>
-            <Image src={aws} alt="aws activate" />
+            <Image src="/images/aws_logo.png" alt="aws activate" />
           </Col>
           <Col className={styles.perksTextLogo}>
             <h3>AWS Activate Credits and business support</h3>
             <h4>An 11,500 Value</h4>
           </Col>
           <Col md={3} className={styles.perkLogos}>
-            <Image src={hubspot} alt="hubspot" />
+            <Image src="/images/hubspot_logo.png" alt="hubspot" />
           </Col>
           <Col className={styles.perksTextLogo}>
             <h3>Education and access to HubSpot software</h3>

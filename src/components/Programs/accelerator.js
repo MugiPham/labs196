@@ -1,9 +1,8 @@
-import Image from 'next/image'
 import styles from '../../../styles/Programs.module.scss'
-import midImage from '../../../public/images/LabsFloor6.png'
+import Image from "react-bootstrap/Image"
 import { Row, Col } from 'react-bootstrap';
 
-export default function accelerator() {
+export default function AcceleratorProgram() {
     return (
         <section className={styles.acceleratorInfo}>
             <h4 className={styles.sectionTitle}>Accelerator Program</h4>
@@ -28,7 +27,7 @@ export default function accelerator() {
                     <p>EDGE196 is revolutionizing the venture capital investment industry. Our accelerator program is designed to support startups with unicorn potential due to their innovative ideas and exceptional team to get investor-ready and launch their project to the moon.</p>
                 </Col>
                 <Col md={6}>
-                    <Image src={midImage} alt="labs floor" />
+                    <Image src="/images/LabsFloor6.png" width="100%" alt="labs floor" />
                 </Col>
             </Row>
 

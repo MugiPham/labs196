@@ -8,8 +8,21 @@ $continents-bg: url("../public/images/continents.svg");
 
 // Top Banner on HomePage
 .TopBanner {
+  display: flex;
+  justify-content: center;
+  // background-size: cover;
+  // background-position: center;
   position: relative;
   z-index: 4;
+}
+
+.topImg{
+  width: 80rem;
+  height: 40rem;
+
+  @media screen and (min-width: 320) and (max-width: 885) {
+    width: 100vw
+  }
 }
 
 .title {
@@ -23,12 +36,19 @@ $continents-bg: url("../public/images/continents.svg");
   display: flex;
   //   justify-content: center;
   // align-items: center;
-  padding: 2.5em;
+  padding: 5rem 2.5em;
 
   @media screen and (min-width: 886px) and (max-width: 1025px) {
     top: 5;
     right: 5em;
     padding: 3rem 2em;
+  }
+
+  @media screen and (min-width: 320) and (max-width: 885) {
+    justify-content: center;
+    align-self: center;
+    left: 5em;
+    color: red;
   }
 
   h1 {
@@ -55,18 +75,18 @@ $continents-bg: url("../public/images/continents.svg");
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
-  padding: 4rem;
+  padding: 2rem;
 
-  @media screen and (max-width: 320px) {
-    margin-top: 45em;
-  }
+  // @media screen and (max-width: 320px) {
+  //   margin-top: 45em;
+  // }
 
-  @media screen and (min-width: 321px) and (max-width: 500px) {
-    margin-top: 33em;
-  }
-  @media screen and (min-width: 600px) and (max-width: 885px) {
-    margin-top: 10em;
-  }
+  // @media screen and (min-width: 321px) and (max-width: 500px) {
+  //   margin-top: 33em;
+  // }
+  // @media screen and (min-width: 600px) and (max-width: 885px) {
+  //   margin-top: 10em;
+  // }
 
   p {
     line-height: 38px;
@@ -95,6 +115,7 @@ $continents-bg: url("../public/images/continents.svg");
 }
 
 .cards {
+  padding: 1em;
   h1 {
     padding-bottom: 0.5em;
   }
@@ -105,6 +126,19 @@ $continents-bg: url("../public/images/continents.svg");
   li {
     padding: 1em 0;
     line-height: 18px;
+  }
+}
+
+.middleImg{
+  display: flex;
+  width: 38rem;
+  height: 20rem;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    width: 85vw;
+    padding-bottom: 1rem;
   }
 }
 

@@ -1,8 +1,6 @@
 import styles from "../../../styles/HomePage.module.scss";
-import Image from "next/image";
 import { Row, Col, Container } from "react-bootstrap";
-
-import colPicture from "../../../public/images/LabsFloor1.png";
+import Image from "react-bootstrap/Image"
 
 export default function MiddleSection() {
   return (
@@ -21,11 +19,9 @@ export default function MiddleSection() {
         </Col>
         <Col md={6}>
           <Image
-            src={colPicture}
+            src="/images/LabsFloor1.png"
             alt="side banner image"
-            height={700}
-            objectFit="cover"
-            objectPosition="center center"
+            width="100%"
           />
         </Col>
       </Row>

@@ -1,11 +1,11 @@
-import Image from 'next/image'
 import styles from '../../styles/Programs.module.scss'
 import background from "../../public/images/MainBanner2x.png"
 import { Container, Row, Col } from 'react-bootstrap';
-import AcceleratorProgram from '../components/Programs/accelerator';
-import InternshipProgram from '../components/Programs/internship'
+import Image from "react-bootstrap/Image"
+import AcceleratorProgram from '../components/Programs/Accelerator';
+import InternshipProgram from '../components/Programs/Internship'
 
-export default function programs() {
+export default function Programs() {
     return (
         <Container className={styles.programsContainer}>
             <Row className={styles.bannerContainer}>
@@ -14,11 +14,9 @@ export default function programs() {
                 </Col>
                 <Col className={styles.topImg}>
                     <Image
-                        src={background}
-                        height={1200}
-                        objectFit="cover"
-                        objectPosition="center center"
-                        // sizes={[1296, 520]}
+                        src="/images/MainBanner2x.png"
+                        width="100%"
+                        height="auto"
                         alt=""
                     />
                 </Col>

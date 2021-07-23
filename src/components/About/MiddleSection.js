@@ -1,8 +1,6 @@
 import styles from "../../../styles/About.module.scss";
-import Image from "next/image";
 import { Row, Col, Container } from "react-bootstrap";
-
-import colPicture from "../../../public/images/LabsFloor.png";
+import Image from "react-bootstrap/Image";
 
 export default function MiddleSection() {
   return (
@@ -10,11 +8,9 @@ export default function MiddleSection() {
       <Row className="pb-4">
         <Col md={6}>
           <Image
-            src={colPicture}
+            src="/images/LabsFloor.png"
             alt="side banner image"
-            height={600}
-            objectFit="cover"
-            objectPosition="center center"
+            width="100%"
           />
         </Col>
         <Col md={6} className="align-self-center">
@@ -63,7 +59,7 @@ export default function MiddleSection() {
         </Col>
       </Row>
       <Row className={styles.cards}>
-        <Col>
+        <Col xs={12} md={3}>
           <hr />
           <h2>Business </h2>
           <ul>
@@ -73,7 +69,7 @@ export default function MiddleSection() {
             <li>Market Testing</li>
           </ul>
         </Col>
-        <Col>
+        <Col xs={12} md={3}>
           <hr />
           <h2>Legal </h2>
           <ul>
@@ -87,7 +83,7 @@ export default function MiddleSection() {
             <li>Legal Consulting</li>
           </ul>
         </Col>
-        <Col>
+        <Col xs={12} md={3}>
           <hr />
           <h2>Marketing </h2>
           <ul>
@@ -98,7 +94,7 @@ export default function MiddleSection() {
             <li>Networking Services</li>
           </ul>
         </Col>
-        <Col>
+        <Col xs={12} md={3}>
           <hr />
           <h2>Leadership </h2>
           <ul>

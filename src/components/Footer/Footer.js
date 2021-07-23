@@ -1,10 +1,10 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
+import Image from "react-bootstrap/Image"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import styles from '../../../styles/Footer.module.scss'
-import logo from '../../../public/images/labs.svg'
+// import logo from '../../../public/images/labs.svg'
 import { IoLogoTwitter, IoLogoFacebook, IoLogoInstagram } from "react-icons/io";
 
 
@@ -18,7 +18,7 @@ export default function Footer() {
               <Link href="/" passHref={true}>
                 <Navbar.Brand>
                   <Image
-                    src={logo}
+                    src="/images/labs.svg"
                     className={styles.brandLogo}
                     alt="Labs196 logo"
                   />

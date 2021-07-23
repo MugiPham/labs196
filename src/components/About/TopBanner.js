@@ -1,6 +1,5 @@
 import styles from "../../../styles/About.module.scss";
-import background from "../../../public/images/MainBanner2x.png";
-import Image from "next/image";
+import Image from "react-bootstrap/Image";
 import { Row, Col, Container } from "react-bootstrap";
 
 export default function TopBanner() {
@@ -18,13 +17,11 @@ export default function TopBanner() {
               to ensure optimal success.
             </p>
           </Col>
-          <Col>
+          <Col >
             <Image
-              src={background}
+              src="/images/MainBanner2x.png"
               className={styles.topImg}
-              height={1300}
-              objectFit="cover"
-              objectPosition="center center"
+              width="100%"
               alt="background image"
             />
           </Col>
