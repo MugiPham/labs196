@@ -2,7 +2,7 @@ import styles from '../../../styles/Programs.module.scss'
 import Image from "react-bootstrap/Image"
 import { Row, Col } from 'react-bootstrap';
 
-export default function AcceleratorProgram() {
+export default function accelerator() {
     return (
         <section className={styles.acceleratorInfo}>
             <h4 className={styles.sectionTitle}>Accelerator Program</h4>

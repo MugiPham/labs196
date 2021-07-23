@@ -2,8 +2,8 @@ import styles from '../../styles/Programs.module.scss'
 import background from "../../public/images/MainBanner2x.png"
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from "react-bootstrap/Image"
-import AcceleratorProgram from '../components/Programs/Accelerator';
-import InternshipProgram from '../components/Programs/Internship'
+import AcceleratorProgram from '../components/Programs/accelerator';
+import InternshipProgram from '../components/Programs/internship'
 
 export default function Programs() {
     return (
