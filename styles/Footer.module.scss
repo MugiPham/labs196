@@ -60,3 +60,17 @@
     }
 
 }
+
+.disclaimer{
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+
+    span{
+        font-family: "New-York Regular";
+        font-size: .8em;
+    }
+}

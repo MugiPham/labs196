@@ -1,7 +1,7 @@
 import styles from '../../../styles/Programs.module.scss'
 import { Row, Col } from 'react-bootstrap';
 
-export default function internship() {
+export default function intenship() {
     return (
         <section className={styles.internshipInfo}>
             <h4 className={styles.sectionTitle}>Internship Program</h4>
@@ -65,7 +65,7 @@ export default function internship() {
 
             <Row>
                 <h1 id="internship-form">Apply to join</h1>
-                <iframe frameBorder="0" style={{ height: "870px", width: "100%", border: "none" }} src='https://forms.zohopublic.com/outreach4/form/InternshipprogramforLABS196/formperma/TZQAXEDaivab0jmTTCXKqakjoRpjSuATNq9FRfzt6Qc'></iframe>
+                <iframe frameBorder="0" style={{ height: "910px", width: "100%", border: "none" }} src='https://forms.zohopublic.com/outreach4/form/InternshipprogramforLABS196/formperma/TZQAXEDaivab0jmTTCXKqakjoRpjSuATNq9FRfzt6Qc'></iframe>
             </Row>
         </section>
     )

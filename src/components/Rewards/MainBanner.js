@@ -9,7 +9,7 @@ export default function MainBanner() {
       <Container>
         <Row className={styles.titleBanner}>
           <Col className={styles.title}>
-            <h1>Perks & Benefits</h1>
+            <h1>Perks & Benefits for Startups</h1>
           </Col>
           <Col>
             <Image

@@ -71,7 +71,7 @@ export default function MiddleSection() {
         </Col>
         <Col xs={12} md={3}>
           <hr />
-          <h2>Legal </h2>
+          <h2>Legal  </h2>
           <ul>
             <li>Business Entity Creation</li>
             <li>Corporate Governance</li>

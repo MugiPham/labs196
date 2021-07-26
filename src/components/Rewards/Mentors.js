@@ -22,9 +22,8 @@ export default function Mentors() {
               Consult our mentors if you find yourself in a tricky situation.
             </h2>
             <p>
-              Mentors are available for consultations and will guide
-              entrepreneurs no matter the situation. Need help with choosing the
-              right software? Consult our technology mentor. Need help with
+              Mentors are available for consultations to guide
+              entrepreneurs. Need help with choosing software? Consult our technology mentor. Need help with
               choosing the right marketing agency? You’ll have an expert to get
               a second opinion.
             </p>

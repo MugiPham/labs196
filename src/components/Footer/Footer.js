@@ -1,12 +1,11 @@
-import Link from 'next/link'
-import { Container, Row, Col } from 'react-bootstrap'
-import Image from "react-bootstrap/Image"
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import styles from '../../../styles/Footer.module.scss'
+import Link from "next/link";
+import { Container, Row, Col } from "react-bootstrap";
+import Image from "react-bootstrap/Image";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import styles from "../../../styles/Footer.module.scss";
 // import logo from '../../../public/images/labs.svg'
 import { IoLogoTwitter, IoLogoFacebook, IoLogoInstagram } from "react-icons/io";
-
 
 export default function Footer() {
   return (
@@ -21,8 +20,7 @@ export default function Footer() {
                     src="/images/labs.svg"
                     className={styles.brandLogo}
                     alt="Labs196 logo"
-                  />
-                  {' '}
+                  />{" "}
                 </Navbar.Brand>
               </Link>
             </Col>
@@ -60,15 +58,45 @@ export default function Footer() {
             <Col xs={12} lg={3} className={styles.section}>
               <Navbar.Text className={styles.title}>FOLLOW US</Navbar.Text>
               <Nav className="flex-row">
-                <a href="https://www.instagram.com/" className={styles.socials} passHref={true}><IoLogoTwitter /></a>
-                <a href="https://www.facebook.com" className={styles.socials} passHref={true}><IoLogoFacebook /></a>
-                <a href="https://www.twitter.com" className={styles.socials} passHref={true}><IoLogoInstagram /></a>
+                <a
+                  href="https://www.instagram.com/"
+                  className={styles.socials}
+                  passHref={true}
+                >
+                  <IoLogoTwitter />
+                </a>
+                <a
+                  href="https://www.facebook.com"
+                  className={styles.socials}
+                  passHref={true}
+                >
+                  <IoLogoFacebook />
+                </a>
+                <a
+                  href="https://www.twitter.com"
+                  className={styles.socials}
+                  passHref={true}
+                >
+                  <IoLogoInstagram />
+                </a>
               </Nav>
-              <Navbar.Text className={styles.license}>Labs196&trade; 2021</Navbar.Text>
+              <Navbar.Text className={styles.license}>
+                Labs196&trade; 2021
+              </Navbar.Text>
             </Col>
           </Row>
         </Container>
       </Nav>
+
+      <Container>
+        <div className={styles.disclaimer}>
+          <span>
+            THE EDGE-X DIGITAL ASSET IS NOT AVAILABLE TO ANY USA PERSON OR
+            PERSONS OF COUNTRIES WHERE THE PURCHASE OF DIGITAL ASSETS OR
+            SECURITIES ARE PROHIBITED.
+          </span>
+        </div>
+      </Container>
     </>
   );
 }
